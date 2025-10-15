@@ -1,0 +1,89 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Activate Your Account</title>
+    <style>
+      body {
+        background-color: #f4f4f7;
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .email-wrapper {
+        width: 100%;
+        background-color: #f4f4f7;
+        padding: 40px 0;
+      }
+      .email-content {
+        background: #ffffff;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        background-color: #2f54eb;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .body {
+        padding: 30px;
+        text-align: center;
+      }
+      .body h2 {
+        color: #2f54eb;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #2f54eb;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #1d39c4;
+      }
+      .footer {
+        text-align: center;
+        color: #888;
+        font-size: 12px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='email-wrapper'>
+      <div class='email-content'>
+        <div class='header'>
+          🎉 Welcome to Event Booker!
+        </div>
+        <div class='body'>
+          <h2>Hello, {{name}}!</h2>
+          <p>Thank you for joining <strong>Event Booker</strong>.</p>
+          <p>To complete your registration, please confirm your email address by
+            clicking the button below:</p>
+
+          <a href='{{url}}' class='btn'>Activate My Account</a>
+
+          <p style='margin-top: 30px; color: #666;'>
+            Or copy and paste this link into your browser:<br />
+            {{!-- <a href='{{url}}' style='color: #2f54eb;'>{{url}}</a> --}}
+          </p>
+        </div>
+        <div class='footer'>
+          &copy;
+          {{year}}
+          Event Booker. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

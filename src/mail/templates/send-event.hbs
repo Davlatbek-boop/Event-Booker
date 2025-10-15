@@ -1,0 +1,88 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>New Event Notification</title>
+    <style>
+      body {
+        background-color: #f7f9fc;
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        max-width: 600px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        background-color: #2f54eb;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .content {
+        padding: 30px;
+      }
+      .content h2 {
+        color: #2f54eb;
+        margin-bottom: 10px;
+      }
+      .event-details {
+        margin-top: 15px;
+        line-height: 1.6;
+      }
+      .event-details strong {
+        color: #111;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #2f54eb;
+        color: white !important;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 25px;
+      }
+      .btn:hover {
+        background-color: #1d39c4;
+      }
+      .footer {
+        text-align: center;
+        font-size: 12px;
+        color: #888;
+        padding: 20px;
+        background: #fafafa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='wrapper'>
+      <div class='header'>
+        🎉 A New Event Has Been Created!
+      </div>
+      <div class='content'>
+        <h2>{{event}}</h2>
+        <p class='event-details'>
+          <strong>Date:</strong>
+          {{date}}
+          <br />
+          <strong>Description:</strong>
+          {{description}}
+        </p>
+        <p style='margin-top: 25px; color: #666;'>
+          If you didn’t expect this email, you can safely ignore it.
+        </p>
+      </div>
+      <div class='footer'>
+        Event Booker. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>
